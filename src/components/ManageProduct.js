@@ -82,11 +82,12 @@ class ManageProduct extends Component {
             this.getProduct()
             
             console.log(res)
-            console.log('berhasil berganti')           
+            console.log('berhasil berganti COI')           
             
         }).catch(res => {
             console.log(res)
             console.log('Gagal Akses DB')
+
         }) 
         this.toggle()
     }
