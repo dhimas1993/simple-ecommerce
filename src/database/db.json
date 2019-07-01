@@ -1,0 +1,47 @@
+{
+  "user": [
+    {
+      "username": "DH",
+      "email": "DH@gm.com",
+      "password": "asdf",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "hoodie Dua",
+      "desc": "Baru dibuat hari ini",
+      "price": 34000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 1
+    },
+    {
+      "name": "hoodie 2",
+      "desc": "Baru dibuat hari ini",
+      "price": 34000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 2
+    },
+    {
+      "name": "Dua DUa",
+      "desc": "Baru dibuat setelah yag pertama",
+      "price": 35000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 3
+    },
+    {
+      "desc": "baru dibuat setelah yang pertama",
+      "name": "Bag Tiga",
+      "price": 38000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 4
+    },
+    {
+      "desc": "baru dibuat sekarang nih",
+      "name": "Bag empat",
+      "price": 48000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 5
+    }
+  ]
+}
