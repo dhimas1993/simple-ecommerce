@@ -5,11 +5,17 @@
       "email": "DH@gm.com",
       "password": "asdf",
       "id": 1
+    },
+    {
+      "username": "DF",
+      "email": "df@gmail.com",
+      "password": "asdf",
+      "id": 2
     }
   ],
   "products": [
     {
-      "name": "hoodie Dua",
+      "name": "hoodie 2",
       "desc": "Baru dibuat hari ini",
       "price": 34000,
       "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
@@ -42,40 +48,60 @@
       "price": 48000,
       "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
       "id": 5
+    },
+    {
+      "name": "bag lima",
+      "desc": "dibuat nih ",
+      "price": 58000,
+      "src": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 6
     }
   ],
   "Cart": [
     {
       "idUser": 1,
-      "idProduct": 1,
-      "productName": "hoodie Dua",
+      "idProduct": 2,
+      "productName": "hoodie 2",
       "productPrice": 34000,
-      "inputCart": "",
+      "inputCart": "123",
+      "inputGambar": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
       "id": 1
     },
     {
       "idUser": 1,
-      "idProduct": 1,
-      "productName": "hoodie Dua",
-      "productPrice": 34000,
-      "inputCart": "",
+      "idProduct": 3,
+      "productName": "Dua DUa",
+      "productPrice": 35000,
+      "inputCart": "37",
+      "inputGambar": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
       "id": 2
-    },
-    {
-      "idUser": 1,
-      "idProduct": 1,
-      "productName": "hoodie Dua",
-      "productPrice": 34000,
-      "inputCart": "",
-      "id": 3
     },
     {
       "idUser": 1,
       "idProduct": 5,
       "productName": "Bag empat",
       "productPrice": 48000,
-      "inputCart": "9",
+      "inputCart": "12",
+      "inputGambar": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 3
+    },
+    {
+      "idUser": 2,
+      "idProduct": 1,
+      "productName": "hoodie 2",
+      "productPrice": 34000,
+      "inputCart": "2",
+      "inputGambar": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
       "id": 4
+    },
+    {
+      "idUser": 2,
+      "idProduct": 2,
+      "productName": "hoodie 2",
+      "productPrice": 34000,
+      "inputCart": "2",
+      "inputGambar": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 5
     }
   ]
 }

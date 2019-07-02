@@ -6,6 +6,7 @@ import { onLogoutUser } from '../actions'
 
 import {
     Button,
+    Badge,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -73,11 +74,11 @@ class Header extends Component {
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                    <NavItem className='mt-2'>
+                    <NavItem className='mt-2 wh' >
                         <Link to='/' >All Products</Link>
                     </NavItem>
                     <NavItem>
-                          <Link to="/cart"><i className="material-icons m-2" >cart</i></Link>
+                          
                     </NavItem>
                     <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
@@ -88,7 +89,7 @@ class Header extends Component {
                             <Link to='/manageproduct'>Manage Product</Link>
                         </DropdownItem>
                         <DropdownItem>
-                            Option 2
+                            <Link to="/cart" className=''>Shoping Cart<Badge color="secondary" className='ml-1'>4</Badge></Link>
                         </DropdownItem>
                         <DropdownItem divider />
                         <Button className='dropdown-item' href='/login' onClick={this.onButtonClick}>

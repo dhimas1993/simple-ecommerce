@@ -5,29 +5,35 @@ import axios from 'axios'
 
 
 
-
 class ProductItem extends Component { 
 
     addToCart = () => {
         const idUser = this.props.user.id
         const qty = this.qty.value
         // var sesuai nama database
-        var { id, name, price} = this.props.barang
+        var { id, name, price, src} = this.props.barang
 
+
+    if(qty > 0  && idUser !== ''){
         axios.post(
             'http://localhost:2019/Cart', {
                 idUser : idUser,
                 idProduct : id,
                 productName : name,
                 productPrice : price,
-                inputCart : qty
+                inputCart : qty,
+                inputGambar : src
             }).then ( res => {
                 console.log(res)
-                alert('berhasil input kaco dah luuu')
-            
+                alert('belanja mulu bangsat')            
             })
-    }
-
+    } else {
+        if(idUser === ''){
+            alert("silahkan login boss")
+        }else {
+        alert('Isi banyak barang yang anda beli')
+        }        
+    }}
 
 
     render () {
