@@ -7,6 +7,7 @@ import Register from './Register'
 import Login from './Login'
 import Home from './Home'
 import ManageProduct from './ManageProduct'
+import Cart from './Cart'
 import DetailProduct from './DetailProduct'
 import Cookies from 'universal-cookie'
 
@@ -37,6 +38,7 @@ class App extends Component {
                     <Route path="/" exact component={Home}/> {/* equal, ===  */}
                     <Route path="/register" component={Register}/> {/* include() */}
                     <Route path="/login" component={Login}/> {/* include() */}
+                    <Route path='/cart' component={Cart} />
                     <Route path="/manageproduct" component={ManageProduct}/> {/* include() */}
                     <Route path='/detailproduct/:product_id' component={DetailProduct}/>
                 </div>

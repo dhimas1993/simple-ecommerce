@@ -76,6 +76,9 @@ class Header extends Component {
                     <NavItem className='mt-2'>
                         <Link to='/' >All Products</Link>
                     </NavItem>
+                    <NavItem>
+                          <Link to="/cart"><i className="material-icons m-2" >cart</i></Link>
+                    </NavItem>
                     <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                         Hi {this.props.user.username}

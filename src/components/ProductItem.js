@@ -1,12 +1,38 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import axios from 'axios'
+
 
 
 
 class ProductItem extends Component { 
+
+    addToCart = () => {
+        const idUser = this.props.user.id
+        const qty = this.qty.value
+        // var sesuai nama database
+        var { id, name, price} = this.props.barang
+
+        axios.post(
+            'http://localhost:2019/Cart', {
+                idUser : idUser,
+                idProduct : id,
+                productName : name,
+                productPrice : price,
+                inputCart : qty
+            }).then ( res => {
+                console.log(res)
+                alert('berhasil input kaco dah luuu')
+            
+            })
+    }
+
+
+
     render () {
 
-        var {id, name, desc, price, src} = this.props.barang
+        var {id, name, price, src} = this.props.barang
         
         return (
             <div className="card col-3 m-4 " >
@@ -15,15 +41,25 @@ class ProductItem extends Component {
                     <h5 className='card-title' >{name}</h5>
                     {/* <p className='card-text'>{desc}</p> */}
                     <p className='card-text'>Rp. {price}</p>
-                    <input type='number' className='form-control btn-block'/>
+                    {/* untuk menangkap inputan */}
+                    <input type='text' className='form-control btn-block' ref={(input) => {this.qty = input}} />
                     <Link to={'/detailproduct/' + id}>
                         <button className='btn btn-outline-primary btn-block m-auto'>Details</button>
                     </Link>
-                    <button className='btn btn-primary btn-block'>Add To Cart</button>
+                    {/* connect state product dari home kedalam fun add to cart */}
+                    <button className='btn btn-primary btn-block' onClick={() => {this.addToCart (this.props.product)}} >Add To Cart</button>
                 </div>                
             </div>
         )
     }
 }
 
-export default ProductItem 
+// buat tarik user dari reducers
+// parameter state bebas
+const mapStateToProps = (state) => {
+    return {
+        user : state.auth
+    }
+}
+
+export default connect (mapStateToProps) (ProductItem)
